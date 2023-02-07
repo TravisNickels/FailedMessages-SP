@@ -24,7 +24,7 @@ OK I think I was able to setup up my dev environment, but it took me a while to 
     > netsh http delete urlacl url=http://localhost:33333/
     > netsh http delete urlacl url=http://+:33334/
    ```
-- Cloned the [ServicePulse repo](https://github.com/Particular/ServicePulse) and followed the readme to get get the browser up and running.  This went fairly smooth for me.
+- Cloned the [ServicePulse repo](https://github.com/Particular/ServicePulse) and followed the readme to get the browser up and running.  This went fairly smooth for me.
 - Created endpoints to send messages that fail.  This step took me a little while to figure out because the first [sample](https://docs.particular.net/samples/servicecontrol/adapter-asq-multi-storage-account/) I tried I couldn't get it to work.
   - Used [Azure Storage Queues Transport sample](https://docs.particular.net/samples/azure/storage-queues/) as the framework for the endpoints and used [Monitor with ServiceControl events sample](https://docs.particular.net/samples/servicecontrol/events-subscription/) to modify that framework to send failed messages.
   - Disabled StorageReader as a startup project
